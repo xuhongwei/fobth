@@ -1,0 +1,16 @@
+<li class="post">
+  <div class="post-snapshoot">
+    <i class="slide-bg"></i>
+    <a class="post-thumb" href=<%= "#{product_path(product)}" %> target="_self" rel="bookmark">
+        <img width="280" height="150" data-ks-lazyload=<%= "#{product.image.url}" %> class="attachment-thumb-pc wp-post-image" alt="928-280x150" />
+    </a>
+  </div>
+  <%= link_to "#{product.name}", product_path(product), :class => "post-title", :target => "_self", :title => "#{product.name}", :rel => "bookmark" %>
+  <div class="post-extra">
+    <span class="post-date"><%= l product.created_at , :format => :long %></span>
+    <!-- <span class="post-op">
+        <a href="javascript:void(0)" class="like sprites">18</a>
+        <a href="#" class="comment sprites" title="《title》上的评论">7 </a>
+    </span> -->
+  </div>
+</li>

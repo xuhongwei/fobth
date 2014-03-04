@@ -1,0 +1,25 @@
+<li class="comment" data-id="<%= comment.try(:id) %>" data-username="<%= comment.try(:user).try(:email).split("@").first %>">
+  <div class="comment-content">
+      <a href="javascript:void(0)" class="comment-author-avatar author-3692" target="_blank">
+          <%= image_tag( avatar_url(comment.user), :height => '32', :width => '32', :class => 'avatar avatar-30') %>
+      </a>
+
+      <div class="content-bd">
+          <span class="comment-author-name">
+              <a href="javascript:void(0)" target="_blank"><%= comment.try(:user).try(:email).split("@").first %></a>
+              <em class="colon">:</em>
+          </span>
+          <span class="comment-words">
+              <% if comment.try(:parent) %>
+                <a href="javascript:void(0)"><%= "@#{comment.try(:parent).try(:user).try(:email).split("@").first}" %></a>
+              <% end %>
+              <%= comment.try(:body) %>
+          </span>
+          <% if current_user %>
+            <a href="javascript:void(0)" class="comment-op J_Reply">Reply</a>
+          <% end %>
+      </div>
+      <div class="comment-date"><%= comment.try(:created_at) %></div>
+  </div>
+  <div class="h-dotted-line"></div>
+</li>

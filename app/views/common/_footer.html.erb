@@ -1,0 +1,66 @@
+<!-- #footer -->
+<div id="footer">
+
+    <div class="footer-bd">
+
+        <div class="col-up clearfix">
+
+            <!-- .friend-links -->
+            <div class="section friend-links">
+                <h3 class="section-title">Friend Links</h3>
+                <ul class="closed link-list" id="J_LinksWrapper">
+                    <%= render :partial => "common/link", :collection => @links %>
+                </ul>
+<!--                 <a href="javascript:void(0)" id="J_MoreLink" class="more-link">MORE...</a>
+ -->            </div>
+            <!-- END .friend-links -->
+
+            <!-- .hot-tags -->
+            <div class="section hot-tags">
+                <h3 class="section-title">Hot Products</h3>
+                <div class="tag-list">
+                    <% if !@hots.blank? %>
+                      <% is_first = true %>
+                      <% for hot in @hots %>
+                        <% unless is_first %>
+                            <i class="point sprites"></i>
+                        <% end %>
+                        <% is_first = false %>
+                        <%= link_to "#{hot.name}", "#{hot.url}", :style => "font-size: 12px;" %>
+                      <% end %>
+                    <% else %>
+                      
+                    <% end %>
+                </div>
+                <div class="footer-search">
+                    <%= render :partial => "common/search" %>
+                </div>
+            </div>
+            <!-- END .hot-tags -->
+
+        </div>
+
+        <!-- footer-logo, copyright, ued-links -->
+        <div class="col-down clearfix">
+
+            <a class="ued-logo" href="http://www.fobth.com" target="_self">
+                <img src="http://ued.taobao.org/blog/wp-content/themes/taobaoued/images/logo-foot.png" alt="Fobth" />
+            </a>
+
+            <em class="copyright">
+                Copyright &copy; 2014 Fobth. All rights reserved.
+            </em>
+
+            <span class="ued-links">
+                <a href="#" target="_blank" class="rss sprites"></a>
+                <a href="#" target="_blank" class="twitter sprites"></a>
+                <a href="#" target="_blank" class="weibo sprites"></a>
+            </span>
+
+        </div>
+        <!-- END footer-logo, copyright, ued-links -->
+
+    </div>
+
+</div>
+<!-- END #footer -->

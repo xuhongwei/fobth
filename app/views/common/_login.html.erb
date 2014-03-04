@@ -1,0 +1,34 @@
+<div id="J_Login" class="login">
+
+  <% if user_signed_in?%>
+    <a href="/logout" class="logout-entry">
+      <%= image_tag( avatar_url(current_user), :height => '32', :width => '32', :class => 'avatar avatar-30') %>
+      <em>Out</em>
+    </a>
+  <% else %>
+    <a href="javascript:void(0)" class="login-entry J_LoginEntry" title="Login">Login</a>
+
+    <div class="form-wrapper J_FormWrapper" style="display: none;">
+
+      <i class="arrow-refer sprites"></i>
+
+      <form name="loginform" action="" method="post">
+        <p class="col-extra">
+          <a class="weibo-login" href="javascript:void(0);" title="Login with Facebook">
+            <i class="weibo-white sprites"></i>Facebook
+          </a>
+          <!-- <em class="vertical-line">|</em>
+          <a class="twitter-login" href="javascript:void(0);" title="Login with Twitter">
+            <i class="weibo-white sprites"></i>Twitter
+          </a>
+          <em class="vertical-line">|</em>
+          <a class="google-login" href="javascript:void(0);" title="Login with Google">
+            <i class="weibo-white sprites"></i>Google
+          </a> -->
+        </p> 
+      </form>
+
+    </div>
+  <% end %>
+
+</div>

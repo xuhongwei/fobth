@@ -1,0 +1,8 @@
+<div class="page-nav">
+  <div class="pre-page page sprites">
+    <%= link_to_previous_page(@products,"pre") if @products %>
+  </div>
+  <div class="next-page page sprites">
+    <%= link_to_next_page(@products, "next") if @products %>
+  </div>
+</div>

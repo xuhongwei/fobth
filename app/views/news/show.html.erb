@@ -1,0 +1,27 @@
+<div class="ued-single">
+  <div class="post">
+
+    <!-- .post-hd -->
+    <div class="post-hd">
+      <div class="post-info">
+        <h1 class="post-title">
+          <%= @news.try(:title)  %>
+        </h1>
+        <p class="post-extra">
+          <label>
+            Time：<em><%= @news.try(:news_date) %></em>
+          </label>
+        </p>
+      </div>
+    </div>
+    <!-- END .post-hd -->
+    <div class="h-dotted-line"></div>
+
+    <!-- .post-bd -->
+    <div class="post-bd">
+      <%= @news.try(:content).try(:html_safe)  %>
+    </div>
+    <!-- END .post-bd -->
+  </div>
+</div>
+<% javascript 'product' %>

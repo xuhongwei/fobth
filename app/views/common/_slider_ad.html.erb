@@ -1,0 +1,21 @@
+<!-- .slider-ad -->
+<div class="slider-ad clearfix">
+  <div id="J_Slider" class="slider">
+    <div class="slider-pannels">
+      <div class="slider-pannel">
+        <a class="pannel-bd" href="<%= "#{@home.try(:slide_url)}" %>" target="_blank">
+          <img class="pannel-img" width="580px" height="320px" src="<%= "#{@home.try(:image).try(:url)}"  %>"  />
+          <span class="pannel-title"><i class="mask"></i>
+              <em><%= @home.try(:slide_title)  %></em>
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="ad">
+    <a href="<%= "#{@home.try(:photo_url)}" %>" target="_blank">
+      <img width="280px" height="320px" src="<%= "#{@home.try(:photo).try(:url)}"  %>" />
+    </a>
+  </div>
+</div>
+<!-- END .slider-ad -->

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <%= render_page_title_tag %>
+  <%= render_page_description_meta_tag %>
+  <%= render_page_keywords_meta_tag %>
+  <%= render_page_image_link_tag %>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+
+  <meta property="og:title"       content="<%= page_title ||  SeoHelper.configuration.site_name %>"/>
+  <meta property="og:description" content="<%= page_description || SeoHelper.configuration.default_page_description %>"/>
+  <meta property="og:image:url"   content="<%= page_image ||  SeoHelper.configuration.default_page_image %>"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body class="page custom-background">
+  <!-- home url -->
+  <input type="hidden" id="J_Home" value="http://www.fobth.com/">
+  <!-- #content -->
+  <div id="content" class="clearfix">
+      <!-- .col-right -->
+      <div class="col-right">
+        <!-- .content-bd -->
+        <div class="content-bd">
+          <%= yield %>
+        </div>
+        <!-- #content-bd -->
+      </div>
+      <!-- #col-right -->
+
+      <!-- .back-to-top -->
+      <div id="J_BackTop" class="back-top">
+          <a class="sprites bg-anim" href="javascript:void(0)"></a>
+      </div>
+      <!-- END .back-to-top -->
+  </div>
+  <!-- END #content -->
+  <%= render :partial => "common/footer" %>
+
+  <script type='text/javascript' src='http://g.tbcdn.cn/kissy/k/1.4.1/seed-min.js'></script>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= yield :javascripts %>
+
+</body>
+</html>

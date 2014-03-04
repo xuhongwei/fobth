@@ -1,0 +1,11 @@
+<div class="ued-about">
+  <div class="ued-intro">
+    <h3 class="intro-title">
+      <%= @contact.try(:title) %>
+    </h3>
+    <div class="intro-desc">
+      <%= @contact.try(:description).try(:html_safe) %>
+    </div>
+    <div class="map" id="map_canvas"  style="width: 500px; height:420px"></div>
+  </div>
+</div>

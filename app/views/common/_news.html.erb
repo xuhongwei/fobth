@@ -1,0 +1,26 @@
+<a class="timeline-date" href="javascript:void(0)" target="_self"><%= news.news_date %></a>
+<div class="post-8816 post type-post status-publish format-standard hentry category-frontend category-bowen category-lanlan" data-id="8816">
+
+    <div class="timeline-line"></div>
+
+    <h3 class="post-title">
+        <a href=<%= "#{news_path(news)}" %> title=<%= "#{news.title}" %> target="_self"><%= news.title %></a>
+    </h3>
+
+    <div class="h-dotted-line"></div>
+
+    <div class="post-excerpt">
+        <p><%= strip_tags(news.content).truncate(250) %> &hellip; <a class="readmore" href=<%= "#{news_path(news)}" %>>More&gt;</a>
+        </p>
+    </div>
+    <% if news.image? %>
+      <a class="post-thumb" href=<%= "#{news_path(news)}" %> target="_self">
+        <%= image_tag(news.image.url) %>
+      </a>
+    <% end %>
+
+    <div class="post-extra">
+        <span class="post-date"><%= news.created_at %></span>
+    </div>
+
+</div>

@@ -1,0 +1,117 @@
+.ued-lanlan {
+    color:#666;
+    background-color:#fff
+}
+.ued-lanlan .lanlan-info {
+    overflow:hidden;
+    line-height:22px;
+    padding:30px 30px 50px;
+    background-color:#f1f1f1
+}
+.ued-lanlan .lanlan-info p {
+    padding:6px 0;
+    text-indent:25px
+}
+.ued-lanlan .lanlan-logo {
+    overflow:hidden
+}
+.ued-lanlan .lanlan-logo img {
+    float:left
+}
+.ued-lanlan .pink {
+    color:#f1968a
+}
+.ued-lanlan .member-list {
+    overflow:hidden;
+    padding-left:25px
+}
+.ued-lanlan .member-item {
+    float:left;
+    height:50px;
+    width:50px;
+    overflow:hidden;
+    margin:5px 5px 0 0
+}
+.ued-lanlan .member-item img {
+    width:100%
+}
+.ued-lanlan .lanlan-posts {
+    overflow:hidden;
+    padding:35px 70px 100px 52px
+}
+.ued-lanlan .post {
+    position:relative;
+    line-height:25px;
+    overflow:hidden;
+    padding-left:78px
+}
+.ued-lanlan .last-post {
+    height:100px!important
+}
+.ued-lanlan .post-title {
+    width:100%;
+    margin:10px 0 5px;
+    overflow:hidden;
+    display:inline-block;
+    text-overflow:ellipsis;
+    white-space:nowrap
+}
+.ued-lanlan .post-title a {
+    color:#666;
+    font-size:14px;
+    text-decoration:none;
+    vertical-align:middle
+}
+.ued-lanlan .post-excerpt {
+    margin:8px 0 12px;
+    word-break:break-all
+}
+.ued-lanlan .post-thumb {
+    font-size:0;
+    overflow:hidden
+}
+.ued-lanlan .post-thumb img {
+    float:left;
+    width:100%;
+    max-height:170px;
+    background-color:#f1f1f1
+}
+.ued-lanlan .post-thumb i {
+    float:left;
+    width:100%;
+    height:170px;
+    background:#f1f1f1
+}
+.ued-lanlan .post-extra {
+    float:left;
+    width:100%;
+    margin:20px 0
+}
+.ued-lanlan .readmore {
+    color:#ff5f3e
+}
+.ued-lanlan .timeline-date {
+    display:inline-block;
+    width:73px;
+    height:29px;
+    color:#fff!important;
+    font-family:Arial;
+    line-height:29px;
+    text-align:center;
+    text-decoration:none!important;
+    border-radius:3px;
+    background:#d1c9c3
+}
+.ued-lanlan .timeline-line {
+    position:absolute;
+    top:0;
+    left:32px;
+    width:9px;
+    height:100%;
+    background:#f3f2ee
+}
+.ks-webkit .ued-lanlan .post-thumb i {
+    background:#f1f1f1 image-url("lanlan-logo.png") center no-repeat;
+    background-size:300px 120px;
+    -webkit-filter:blur(2px)
+}

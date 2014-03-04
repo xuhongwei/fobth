@@ -1,0 +1,27 @@
+<!-- .col-left -->
+<div class="col-left">
+
+  <!-- #nav -->
+  <div id="J_Nav" class="nav">
+
+    <a class="ued-logo" href="http://www.fobth.com/" target="_self">
+        <%= image_tag("logo.png", :size => "220x99", :alt => "Fobth") %> 
+    </a>
+
+    <div class="nav-menu">
+      <div id="J_NavLabel" class="nav-label">
+          <span></span>
+      </div>
+      <ul id="menu-primary" class="menu">
+        <%= left_menu(@categories) %>
+      </ul>
+    </div>
+
+    <div class="nav-search">
+      <%= render :partial => "common/search" %>
+    </div>
+
+  </div>
+  <!-- END #nav -->
+</div>
+<!-- END .col-left -->

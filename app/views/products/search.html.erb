@@ -1,0 +1,26 @@
+<h2 class="content-title">Search Result</h2>
+<% if !@products.blank? %>
+  <!-- .post-list -->
+  <ul class="post-list clearfix">
+      <%= render :partial => "common/product", :collection => @products %>
+  </ul>
+  <!-- END .post-list -->
+  <div class="page-nav">
+    <div class="pre-page page sprites">
+      <%= link_to_previous_page(@products,"pre", :params => {:q => "#{params[:q]}"}) %>
+    </div>
+    <div class="next-page page sprites">
+      <%= link_to_next_page(@products, "next", :params => {:q => "#{params[:q]}"}) %>
+    </div>
+  </div>
+<% else %>
+  <div class="empty-promot">
+    Your search <pre class="search-text"><%= params[:q] %></pre> did not match any products.<br>
+    <p style="margin-top:1em">Suggestions:</p>
+    <ul style="margin-left:1.3em;margin-bottom:2em">
+      <li>Make sure all words are spelled correctly.</li>
+      <li>Try different keywords.</li>
+      <li>Try more general keywords.</li>
+    </ul>
+</div>
+<% end %>

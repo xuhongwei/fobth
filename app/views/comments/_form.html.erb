@@ -1,0 +1,20 @@
+<%= form_for(:comment, :url => product_comments_path(commentable.id), :html => { :class => "comment-form J_CommentForm" }) do |f| %>
+  <div class="user-avatar">
+    <%= image_tag( avatar_url(current_user), :height => '32', :width => '32', :class => 'avatar avatar-30') %>       
+  </div>
+
+  <div class="user-reply J_UserReply" style="display: none;">
+    <em class="user-to-reply J_UserToReply" href="javascript:void(0)"></em>
+    <a class="del-user J_DelUser sprites" href="javascript:void(0)" title="Cancel"></a>
+  </div>
+
+  <div class="user-input">
+    <textarea id="comment_body" class="comment-input J_CommentInput" name="comment[body]" placeholder="Say something..." data-default="Say something..." data-reply="Reply"></textarea>
+  </div>
+
+  <div class="user-op">
+    <input type="submit" class="submit-comment J_SubmitComment" value="submit" data-loading="Submiting">
+  </div>
+  <%=f.hidden_field :commentable_id, :value => @product.id %>
+  <%=f.hidden_field :parent_id, :value => 0, :class => "J_ParentId" %>
+<% end %>

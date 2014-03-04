@@ -1,0 +1,447 @@
+.ued-single a:hover {
+    color:#ff5f3e!important
+}
+.ued-single .post {
+    position:relative;
+    background:#fff;
+    padding:20px 25px 75px
+}
+.ued-single .post-hd {
+    position:relative
+}
+.ued-single .post-author {
+    position:absolute;
+    width:50px;
+    height:50px;
+    overflow:hidden
+}
+.ued-single .post-info {
+    min-height:50px;
+    /*padding-left:65px*/
+}
+.ued-single .post-title {
+    font-size:17px;
+    line-height:23px;
+    font-weight:700;
+    font-family:"Helvetica Neue", Helvetica, Tahoma, Arial, "Microsoft Yahei"
+}
+.ued-single .post-extra {
+    color:#aaa;
+    font-size:12px;
+    margin-top:6px;
+    font-family:inherit
+}
+.ued-single .post-extra a {
+    color:#aaa
+}
+.ued-single .post-extra .v-line {
+    margin:0 11px 0 8px
+}
+.ued-single .h-dotted-line {
+    margin:12px 0 32px
+}
+.ued-single .post-bd {
+    color:#4a4a4a;
+    font-size:14px;
+    line-height:2;
+    max-width:715px;
+    min-height:600px;
+    overflow:hidden
+}
+.ued-single .post-bd img {
+    max-width:100%
+}
+.ued-single .post-tags {
+    color:#aaa;
+    margin-top:20px
+}
+.ued-single .post-tags a {
+    color:#333
+}
+.ued-single .post-op {
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:100%;
+    height:12px;
+    padding:18px 0;
+    background-color:#efefef;
+    border-top:2px solid #e7e7e7
+}
+.ued-single .post-op a, .ued-single .post-op .v-italic-line {
+    float:left;
+    height:12px;
+    color:#333;
+    line-height:12px;
+    padding-left:15px
+}
+.ued-single .post-op .v-italic-line {
+    padding:0;
+    margin:0 20px
+}
+.ued-single .post-op .like {
+    margin-left:25px
+}
+.ued-single .post-op .post-edit-link {
+    float:right;
+    padding:0;
+    margin-right:25px
+}
+.ued-single .post-op.fixed {
+    position:fixed;
+    left:auto;
+    z-index:100;
+    width:880px;
+    margin-left:-25px
+}
+.ued-single .page-nav {
+    height:41px;
+    margin:30px 0 50px;
+    overflow:hidden
+}
+.single .post-bd h1, .single .post-bd h2, .single .post-bd h3, .single .post-bd h4, .single .post-bd h5, .single .post-bd h6 {
+    clear:both;
+    text-shadow:0 0 1px #eee;
+    font-family:"Helvetica Neue", Helvetica, Tahoma, Arial, "Microsoft Yahei";
+    margin:32px 0 12px
+}
+.single .post-bd h1 {
+    font-size:26px;
+    line-height:1.3846153846
+}
+.single .post-bd h2 {
+    font-size:24px;
+    line-height:1
+}
+.single .post-bd h3 {
+    font-size:22px;
+    line-height:1.0909090909
+}
+.single .post-bd h4 {
+    font-size:20px;
+    line-height:1.2
+}
+.single .post-bd h5 {
+    font-size:18px;
+    line-height:1.3333333333
+}
+.single .post-bd h6 {
+    font-size:16px;
+    line-height:1.5
+}
+.single .post-bd h1:first-child, .single .post-bd h2:first-child, .single .post-bd h3:first-child, .single .post-bd h4:first-child, .single .post-bd h5:first-child, .single .post-bd h6:first-child {
+    margin-top:0
+}
+.single .post-bd a {
+    color:#0c90dc
+}
+.single .post-bd address {
+    font-style:italic;
+    margin-bottom:20px
+}
+.single .post-bd abbr[title] {
+    cursor:help;
+    border-bottom:1px dotted #333
+}
+.single .post-bd b, .single .post-bd strong {
+    font-weight:700
+}
+.single .post-bd cite {
+    border:0
+}
+.single .post-bd cite, .single .post-bd dfn, .single .post-bd em, .single .post-bd i {
+    font-style:italic
+}
+.single .post-bd mark, .single .post-bd ins {
+    border:0;
+    color:inherit;
+    text-decoration:none;
+    background:#ff5f3e
+}
+.single .post-bd p {
+    margin:0 0 20px
+}
+.single .post-bd code, .single .post-bd kbd, .single .post-bd tt, .single .post-bd var, .single .post-bd samp, .single .post-bd pre {
+    font-family:"Courier New", Courier, monospace;
+    font-size:15px;
+    line-height:1.6
+}
+.single .post-bd pre {
+    max-width:100%;
+    overflow:auto;
+    white-space:pre-wrap;
+    word-wrap:break-word;
+    background:#f8f8f8;
+    padding:10px 15px;
+    margin-bottom:20px
+}
+.single .post-bd blockquote, .single .post-bd q {
+    quotes:none
+}
+.single .post-bd blockquote:before, .single .post-bd blockquote:after, .single .post-bd q:before, .single .post-bd q:after {
+    content:"";
+    content:none
+}
+.single .post-bd blockquote {
+    color:#767676;
+    font-size:19px;
+    font-style:italic;
+    font-weight:300;
+    line-height:1.2631578947;
+    margin:0 0 20px
+}
+.single .post-bd blockquote cite, .single .post-bd blockquote small {
+    color:#333;
+    font-size:16px;
+    font-weight:400;
+    line-height:1.5
+}
+.single .post-bd blockquote em, .single .post-bd blockquote i, .single .post-bd blockquote cite {
+    font-style:normal
+}
+.single .post-bd blockquote strong, .single .post-bd blockquote b {
+    font-weight:400
+}
+.single .post-bd small {
+    font-size:smaller
+}
+.single .post-bd big {
+    font-size:125%
+}
+.single .post-bd sup, .single .post-bd sub {
+    font-size:75%;
+    height:0;
+    line-height:0;
+    position:relative;
+    vertical-align:baseline
+}
+.single .post-bd sup {
+    bottom:1ex
+}
+.single .post-bd sub {
+    top:.5ex
+}
+.single .post-bd dl {
+    margin:0 0 20px
+}
+.single .post-bd dt {
+    font-weight:700
+}
+.single .post-bd dd {
+    margin:0 0 20px
+}
+.single .post-bd ul, .single .post-bd ol {
+    list-style:none;
+    margin:0 0 20px 20px;
+    padding-left:0
+}
+.single .post-bd ul {
+    list-style:disc
+}
+.single .post-bd ol {
+    list-style:decimal
+}
+.single .post-bd li>ul, .single .post-bd li>ol {
+    margin:0 0 0 20px
+}
+.single .post-bd del {
+    color:#767676
+}
+.single .post-bd hr {
+    border:0;
+    height:1px;
+    margin-bottom:19px;
+    background-color:#f8f8f8
+}
+#comments .comments-hd {
+    color:#aaa
+}
+#comments .hd-title .highlight {
+    margin-right:2px
+}
+#comments .v-line {
+    margin:0 15px 0 10px
+}
+#comments .h-dotted-line {
+    margin:11px 0 0
+}
+#comments .logout {
+    color:#aaa
+}
+#comments .hd-social-login a {
+    color:#666
+}
+#comments .hd-social-login i {
+    margin-right:3px;
+    vertical-align:text-bottom
+}
+#comments .comment {
+    color:#666;
+    overflow:hidden
+}
+#comments .comment .h-dotted-line {
+    margin:0
+}
+#comments .comment a {
+    color:#ff5f3e
+}
+#comments .comment:hover {
+    background-color:#fffaee
+}
+#comments .comment:hover .comment-op {
+    visibility:visible
+}
+#comments .comment-content {
+    position:relative;
+    padding-left:41px;
+    margin:16px 9px 18px
+}
+#comments .comment-author-avatar {
+    position:absolute;
+    left:0;
+    top:3px;
+    width:30px;
+    height:30px;
+    overflow:hidden
+}
+#comments .comment-author-avatar img {
+    width:100%;
+    height:100%
+}
+#comments .colon {
+    color:#bebebe
+}
+#comments .comment-words {
+    overflow:hidden;
+    word-wrap:break-word;
+    word-break:break-all;
+    margin-left:5px
+}
+#comments .comment-op {
+    margin-left:10px;
+    visibility:hidden
+}
+#comments .comment-date {
+    color:#bebebe;
+    font-family:arial;
+    margin-top:2px
+}
+#comments .children .comment-content {
+    margin-left:50px
+}
+
+#comments .children .children .comment-content {
+    margin-left:100px
+}
+
+#comments .children .children .children .comment-content {
+    margin-left:100px
+}
+
+.comment-promot {
+    color:#aaa;
+    padding:14px 0
+}
+#respond .comment-form {
+    position:relative;
+    padding:22px 0 0 41px;
+    margin:28px 16px 0 9px
+}
+#respond .user-avatar {
+    position:absolute;
+    left:0;
+    top:22px;
+    width:30px;
+    height:30px;
+    overflow:hidden
+}
+#respond .user-avatar img {
+    width:100%;
+    height:100%
+}
+#respond .user-reply {
+    position:absolute;
+    top:0;
+    left:41px;
+    height:18px;
+    display:none;
+    padding:0 18px 0 5px;
+    background:#ff5f3e
+}
+#respond .user-to-reply {
+    display:inline-block;
+    max-width:73px;
+    min-width:36px;
+    height:100%;
+    color:#fff;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    overflow:hidden
+}
+#respond .del-user {
+    position:absolute;
+    right:0;
+    top:0
+}
+#respond .user-input {
+    position:relative;
+    overflow:hidden
+}
+#respond .input-toolbar {
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:100%;
+    height:31px;
+    background-color:#f5f5f5
+}
+#respond .comment-input {
+    float:left;
+    width:100%;
+    height:100px;
+    color:#666;
+    overflow:auto;
+    resize:none;
+    padding:8px 10px;
+    border:1px solid #ddd;
+    box-sizing:border-box;
+    background-color:#fff
+}
+#respond .user-op {
+    margin-top:12px;
+    overflow:hidden
+}
+#respond .submit-comment {
+    float:left;
+    width:52px;
+    height:23px;
+    border:0;
+    color:#fff;
+    line-height:25px\9;
+    cursor:default;
+    border-radius:0;
+    background-color:#ccc;
+    -webkit-appearance:none;
+    -webkit-transition:background-color .2s;
+    -moz-transition:background-color .2s;
+    -o-transition:background-color .2s;
+    transition:background-color .2s
+}
+#respond .submit-comment.active {
+    cursor:pointer;
+    background-color:#ff9079
+}
+#respond .submit-comment.active:hover {
+    background-color:#ff5f3e
+}
+#respond .weibo-share {
+    float:left;
+    color:#aaa;
+    margin:4px 0 0 20px
+}
+#respond .weibo-share input, #respond .weibo-share i {
+    vertical-align:text-bottom
+}
+#respond .weibo-share i {
+    margin:0 3px 0 5px
+}
