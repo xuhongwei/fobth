@@ -1,10 +1,9 @@
 class User < ActiveRecord::Base
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
-  devise :rememberable, :trackable, :validatable
+  devise :database_authenticatable, :rememberable, :trackable, :validatable
   devise :omniauthable, :omniauth_providers => [:google_oauth2, :facebook, :twitter]
 
-  attr_accessible :email,:email_confirmation,:current_password, :password, :password_confirmation, :remember_me
   private 
     def self.find_for_facebook_oauth(auth, signed_in_resource=nil)
       registered_user = User.where(:email => auth.info.email).first
