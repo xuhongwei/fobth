@@ -32,4 +32,9 @@ Fobth::Application.routes.draw do
   end
 
   resources :products, concerns: :commentable
+
+  get 'authentications/facebook'
+  post 'authentications/facebook'
+  match 'users/auth/facebook/callback', to: 'authentications#facebook', via: [:get, :post]
+  match 'auth/failure', to: redirect('/'), via: [:get, :post]
 end
