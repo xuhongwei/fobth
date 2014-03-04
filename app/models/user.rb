@@ -11,10 +11,10 @@ class User < ActiveRecord::Base
         registered_user.remember_me!
         return registered_user
       else
+        password = Devise.friendly_token[0,20]
         user = User.create(
-          email: auth.info.email, password: Devise.friendly_token[0,20], password_confirmation: Devise.friendly_token[0,20]
+          email: auth.info.email, password: password, password_confirmation: password
         )
-
         if user.save
           user.remember_me!
           return user
