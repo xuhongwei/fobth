@@ -79,4 +79,5 @@ Fobth::Application.configure do
   config.log_formatter = ::Logger::Formatter.new
 
   config.assets.precompile += %w( product.js home.js)
+  config.assets.precompile += Ckeditor.assets
 end
