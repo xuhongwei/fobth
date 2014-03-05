@@ -27,42 +27,6 @@
     <div class="post-op">
     </div>
     <!-- END .post-op -->
-
-    <div id="comments" class="disabled">
-      <div class="comments-hd">
-
-        <span class="hd-title">
-          All Comments:
-          <span class="highlight"><%=  @all_comments.try(:size) %></span>
-        </span>
-
-        <em class="v-line">|</em>
-
-        <% if current_user %>
-          <span class="hd-cur-user">
-              Username：<em class="highlight"><%= current_user.email.split("@").first %></em> (<a class="logout" href="/logout" target="_self">Logout</a>)
-          </span>
-        <% else %>
-          <span class="hd-social-login">
-            Facebook Login：<a href="" title="Facebook Login" class="weibo-login" target="_self"><i class="sprites"></i>Facebook</a>
-          </span>
-        <% end %>
-
-      </div>
-
-      <div class="h-dotted-line"></div>
-
-      <ul class="comment-list">
-        <%= nested_comments @root_comments %>
-      </ul>
-    </div>
-    <% if current_user %>
-      <div id="respond">
-        <%= render :partial => 'comments/form', :locals => {:commentable => @product} %>
-      </div>
-    <% else %>
-      <div class="comment-promot not-login">You can comment after login~</div>
-    <% end %>
   </div>
   <!-- .page-nav -->
   <div class="page-nav">
@@ -79,5 +43,40 @@
     </div>
   </div>
   <!-- END .page-nav -->
+  <div id="comments" class="disabled">
+    <div class="comments-hd">
+
+      <span class="hd-title">
+        All Comments:
+        <span class="highlight"><%=  @all_comments.try(:size) %></span>
+      </span>
+
+      <em class="v-line">|</em>
+
+      <% if current_user %>
+        <span class="hd-cur-user">
+            Username：<em class="highlight"><%= current_user.email.split("@").first %></em> (<a class="logout" href="/logout" target="_self">Logout</a>)
+        </span>
+      <% else %>
+        <span class="hd-social-login">
+          Facebook Login：<a href="" title="Facebook Login" class="weibo-login" target="_self"><i class="sprites"></i>Facebook</a>
+        </span>
+      <% end %>
+
+    </div>
+
+    <div class="h-dotted-line"></div>
+
+    <ul class="comment-list">
+      <%= nested_comments @root_comments %>
+    </ul>
+  </div>
+  <% if current_user %>
+    <div id="respond">
+      <%= render :partial => 'comments/form', :locals => {:commentable => @product} %>
+    </div>
+  <% else %>
+    <div class="comment-promot not-login">You can comment after login~</div>
+  <% end %>
 </div>
 <% javascript 'product' %>
