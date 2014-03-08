@@ -9,7 +9,7 @@ set :deploy_to, '/home/rails/fobth.com'
 set :repository, 'https://github.com/xuhongwei/fobth.git'
 set :branch, 'master'
 
-set :shared_paths, ['config/database.yml', 'log']
+set :shared_paths, ['config/database.yml', 'log', 'public/system','public/ckeditor_assets']
 # setting the term_mode to system disable the "pretty-print" but prevent some other issues
 set :term_mode, :system
 
