@@ -4,7 +4,7 @@ defaults: &defaults
   facebook_app_id: 
   facebook_secret: 
   admin_emails: "xuhongwei420@gmail.com"
-  google_analytics_key: "UA-45592860-1"
+  google_analytics_key: "UA-54148940-1"
   default_logo_url: "/logo.png"
 
 development:
