@@ -16,6 +16,7 @@ end
 # SEO
 gem "settingslogic"
 gem 'seo_helper'
+gem 'friendly_id', '~> 5.0.4'
 
 # page
 gem "kaminari"

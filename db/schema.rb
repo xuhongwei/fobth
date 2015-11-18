@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140227163226) do
+ActiveRecord::Schema.define(version: 20151118053047) do
 
   create_table "admins", force: true do |t|
     t.string   "email",                  default: "", null: false
@@ -33,9 +33,10 @@ ActiveRecord::Schema.define(version: 20140227163226) do
 
   create_table "categories", force: true do |t|
     t.string   "name"
-    t.integer  "sequence",   default: 0, null: false
+    t.integer  "sequence"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "slug"
   end
 
   create_table "ckeditor_assets", force: true do |t|
@@ -97,7 +98,7 @@ ActiveRecord::Schema.define(version: 20140227163226) do
   create_table "hots", force: true do |t|
     t.string   "name"
     t.string   "url"
-    t.integer  "sequence",   default: 0, null: false
+    t.integer  "sequence"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -105,7 +106,7 @@ ActiveRecord::Schema.define(version: 20140227163226) do
   create_table "links", force: true do |t|
     t.string   "name"
     t.string   "url"
-    t.integer  "sequence",   default: 0, null: false
+    t.integer  "sequence"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -118,7 +119,6 @@ ActiveRecord::Schema.define(version: 20140227163226) do
     t.string   "image_content_type"
     t.integer  "image_file_size"
     t.datetime "image_update_at"
-    t.integer  "sequence",           default: 0, null: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -131,9 +131,10 @@ ActiveRecord::Schema.define(version: 20140227163226) do
     t.datetime "image_update_at"
     t.text     "description"
     t.integer  "category_id"
-    t.integer  "sequence",           default: 0, null: false
+    t.integer  "sequence"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "slug"
   end
 
   create_table "users", force: true do |t|

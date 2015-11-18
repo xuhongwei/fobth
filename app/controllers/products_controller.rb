@@ -1,7 +1,7 @@
 class ProductsController < ApplicationController
   def index
     if params[:category_id]
-      category = Category.find_by_name(params[:category_id]);
+      category = Category.find(params[:category_id]);
       if category
         @products = category.products.page(params[:page])
         session[:query] = @products.map(&:id)
@@ -15,7 +15,7 @@ class ProductsController < ApplicationController
   end
 
   def show
-    @product = Product.find(params[:id])
+    @product = Product.friendly.find(params[:id])
     @all_comments = @product.comment_threads
     @root_comments = @product.root_comments
     if session[:query]

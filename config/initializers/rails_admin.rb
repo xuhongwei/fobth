@@ -139,4 +139,54 @@ RailsAdmin.config do |config|
       field :description, :ck_editor
     end
   end
+
+  config.model Category do
+
+    field :name, :string
+    field :sequence, :integer
+    # field :created_at,:datetime
+    # field :updated_at,:datetime
+    list do
+      # field :description,:text do
+      #   formatted_value do # used in form views
+      #     value.html_safe if value
+      #   end
+      # end
+      field :created_at,:datetime do
+        strftime_format "%Y-%m-%d %H:%M:%S"
+      end
+      field :updated_at,:datetime do
+        strftime_format "%Y-%m-%d %H:%M:%S"
+      end
+    end
+
+    create do
+      field :name, :string do
+
+      end
+      field :sequence, :integer do
+
+      end
+    end
+
+    show do
+      field :name, :string do
+
+      end
+      field :created_at,:datetime do
+        strftime_format "%Y-%m-%d %H:%M:%S"
+      end
+      field :updated_at,:datetime do
+        strftime_format "%Y-%m-%d %H:%M:%S"
+      end
+    end
+    edit do
+      field :name, :string do
+
+      end
+      field :sequence, :integer do
+
+      end
+    end
+  end
 end
