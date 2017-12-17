@@ -3,7 +3,10 @@ class Product < ActiveRecord::Base
   friendly_id :slug_candidates, use: [:slugged, :finders]
   
   belongs_to :category
-  paginates_per 24
+  paginates_per 15
+
+  # 2016-03-14 add ---- properties
+  has_many :properties, class_name: "Property", foreign_key: "product_id"
 
   # image
   attr_accessor :delete_image
