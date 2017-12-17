@@ -21,7 +21,7 @@ set :user, 'rails'
 set :ssh_options, '-A'
 
 task :environment do
-  invoke :'rvm:use[ruby-2.3.3@default]'
+  invoke :'rvm:use[ruby-2.1.3@default]'
 end
 
 # Function extracted from http://blog.nicolai86.eu/posts/2013-05-06/syncing-database-content-down-with-mina
