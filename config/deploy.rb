@@ -4,7 +4,7 @@ require 'mina/git'
 require 'mina/rvm'
 
 set :rails_env, 'production'
-set :domain, '106.187.41.16' 
+set :domain, '139.162.125.73' 
 set :deploy_to, '/home/rails/fobth.com' 
 set :repository, 'https://github.com/xuhongwei/fobth.git'
 set :branch, 'master'
@@ -21,7 +21,7 @@ set :user, 'rails'
 set :ssh_options, '-A'
 
 task :environment do
-  invoke :'rvm:use[ruby-2.0.0-p451@default]'
+  invoke :'rvm:use[ruby-2.3.3@default]'
 end
 
 # Function extracted from http://blog.nicolai86.eu/posts/2013-05-06/syncing-database-content-down-with-mina
