@@ -16,6 +16,7 @@ class ProductsController < ApplicationController
 
   def show
     @product = Product.friendly.find(params[:id])
+    p @product
     @all_comments = @product.comment_threads
     @root_comments = @product.root_comments
     if session[:query]
