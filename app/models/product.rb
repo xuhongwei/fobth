@@ -6,7 +6,7 @@ class Product < ActiveRecord::Base
   paginates_per 15
 
   # 2016-03-14 add ---- properties
-  has_many :properties, class_name: "Property", foreign_key: "product_id"
+  # has_many :properties, class_name: "Property", foreign_key: "product_id"
 
   # image
   attr_accessor :delete_image
